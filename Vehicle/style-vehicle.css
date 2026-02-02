@@ -1,0 +1,83 @@
+/* Настройки фона всей страницы */
+body {
+    background-color:  #ffffff;
+    font-family: "Times New Roman", Times, serif; /* Шрифт как в документах */
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+hr {
+    border: 0;
+    border-top: 1px solid #ccc; /* Цвет линии */
+    margin: 20px 0;
+    width: 100%; /* Линия на всю ширину текстового блока */
+}
+
+/* Центрируем содержимое */
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* Блок, имитирующий лист бумаги или карточку из задания */
+/* Центрируем текст внутри листа */
+.paper-sheet {
+    display: flex;
+    flex-direction: column; /* Элементы идут сверху вниз */
+    align-items: center;    /* Центрирует всё содержимое листа по горизонтали */
+    text-align: center;     /* Центрирует сам текст внутри абзацев */
+    max-width: 800px;
+    background-color: #f3f3f3;
+    padding: 40px;
+    border: 1px solid #ddd;
+
+}
+
+/* Ограничиваем ширину текста, чтобы он не растягивался слишком сильно */
+.main-text {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Заголовок Vehicle */
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* Текст абзацев */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    text-align: justify; /* Текст ровный по краям */
+}
+
+/* Синие сноски [1], [2] */
+sup {
+    font-weight: bold;
+    color: #0000ee;
+    margin-left: 2px;
+}
+
+
+/* Список источников внизу */
+.sources {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+    text-align: left;
+}
+/* Стиль для кнопки возврата */
+.btn-back {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #c4aec9;
+    color: white;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-top: 20px
+}

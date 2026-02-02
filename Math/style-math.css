@@ -1,0 +1,53 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+sup{
+    position: relative;
+    top: -0.2em;             
+}
+
+.paper-sheet {
+    background-color: #f3f3f3;
+    max-width: 800px;
+    padding: 40px;
+    border: 1px solid #ddd;
+}
+
+h1 { text-align: center; margin-bottom: 30px; }
+
+/* Розовые блоки для формул */
+.formula-box {
+    background-color: #fdb8b6; 
+    display: flex;
+    width: fit-content;
+    padding: 5px 10px;
+    margin: 15px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+.var {
+    color: #a71616;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.bottom-nav {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #c4aec9;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}

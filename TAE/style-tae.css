@@ -1,0 +1,86 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.papper-sheet {
+    background-color: #f3f3f3;
+    max-width: 900px;
+    padding: 40px;
+    border: 1px solid #ddd;
+}
+
+/* Контейнер для каждого раздела (Tag, Attribute, Element) */
+.text-block {
+    margin-bottom: 20px;
+    background-color: #17525a; /* Темно-бирюзовый фон блока */
+}
+
+/* Заголовок внутри блока */
+.text-block h1 {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 40px;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+/* Текст внутри блока (белый на темном фоне) */
+.text-block p {
+    background-color: #246d77; /* Чуть более светлый оттенок для текста */
+    color: #e0e0e0;
+    margin: 0;
+    padding: 10px 40px;
+    line-height: 1.6;
+    text-align: justify;
+    font-size: 14px;
+}
+
+/* Сноски в тексте [1], [2] */
+sup {
+    font-size: 10px;
+    color: #f990a1; 
+    margin-left: 2px;
+    text-align: justify;
+}
+
+.sources strong{
+    font-weight: bold;
+}
+
+/* Источники внизу страницы */
+.sources {
+    font-size: 12px;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 40px;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.sources br {
+    display: block;
+    margin-bottom: 10px;
+    content: "";
+}
+
+
+/* Кнопка навигации */
+.bottom-nav {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #c4aec9;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}

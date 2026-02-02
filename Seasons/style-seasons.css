@@ -1,0 +1,67 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.paper-sheet {
+    background-color: #f3f3f3;
+    width: 400px; /* Сделаем лист поуже, как на картинке */
+    padding: 40px;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* Настройки основного списка */
+.main-list {
+    list-style-type: none; /* Убираем стандартные точки */
+    padding-left: 20px;
+}
+
+/* Настройки для заголовков времен года (с галочкой) */
+.main-list > li {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+/* Рисуем галочку ">" перед временем года */
+.main-list > li::before {
+    content: ">";
+    position: absolute;
+    left: -20px;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Настройки для списка месяцев */
+.main-list ul {
+    list-style-type: none; /* Убираем точки у месяцев */
+    padding-left: 30px;    /* Делаем отступ вправо */
+    margin-top: 5px;
+}
+
+.main-list ul li {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Кнопка навигации (плоская) */
+.bottom-nav {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.btn-back {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #c4aec9;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
