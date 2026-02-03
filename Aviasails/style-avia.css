@@ -1,0 +1,290 @@
+/* =========================================
+   1. БАЗОВЫЕ СБРОСЫ И ШРИФТЫ
+   ========================================= */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f0f4f7;
+    color: #333;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* =========================================
+   2. ХЕДЕР (Синяя полоса)
+   ========================================= */
+.header {
+    background-color: #093a6a;
+    color: white;
+    padding: 25px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* =========================================
+   3. ПОИСК (Белая полоса под хедером)
+   ========================================= */
+.search-section {
+    /* background: white; */
+    padding: 10px 0;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+.trip-options {
+    margin-bottom: 15px;
+}
+
+.trip-options label {
+    margin-right: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.search-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+.search-inputs input, 
+.search-inputs select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-btn {
+    background: #0c4985;
+    color: white;
+    border: none;
+    padding: 0 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.search-btn:hover {
+    background: #093a6a;
+}
+
+/* =========================================
+   4. СЕТКА КОНТЕНТА (Фильтры + Таблица)
+   ========================================= */
+.main-grid {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    align-items: flex-start;
+}
+
+/* Левая колонка: Фильтры */
+.sidebar {
+    flex: 1;
+}
+
+.filter-card {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.filter-card h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.filter-group {
+    margin-bottom: 25px;
+}
+
+.filter-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #0c4985;
+}
+
+.check-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Блок цены (Короткие инпуты в ряд) */
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+}
+
+.price-input {
+    width: 60px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.dash {
+    margin: 0 5px;
+    color: #999;
+}
+
+/* Правая колонка: Результаты */
+.content {
+    flex: 3;
+}
+
+.route-header {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.route-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.flight-card {
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.flight-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.flight-table thead tr {
+    background-color: #f2f2f2; /* Сероватый фон */
+}
+.flight-table th {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #0c4985; /* Синий цвет как в задании */
+    border-bottom: 1px solid #ddd;
+}
+
+.flight-table td {
+    padding: 15px 12px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+.flight-table th:nth-child(1), .flight-table td:nth-child(1) { width: 20%; }
+.flight-table th:nth-child(2), .flight-table td:nth-child(2) { width: 15%; }
+.flight-table th:nth-child(3), .flight-table td:nth-child(3) { width: 15%; }
+.flight-table th:nth-child(4), .flight-table td:nth-child(4) { width: 15%; }
+.flight-table th:nth-child(5), .flight-table td:nth-child(5) { width: 15%; }
+
+.text-muted {
+    color: #777;         /* Светло-серый цвет */
+    font-size: 13px;     /* Чуть меньше размером */
+    display: inline-block;
+    margin-top: 3px;
+}
+
+.flight-table td strong {
+    font-weight: normal; 
+}
+
+.price-cell {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.book-btn {
+    background: #0c4985;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.book-btn:hover {
+    background: #093a6a;
+}
+
+.details-link {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #0c4985;
+    text-decoration: none;
+}
+
+.details-link:hover {
+    text-decoration: underline;
+}
+
+/* Кнопка возврата в хэдере */
+.btn-back {
+    display: inline-block;
+    margin-left: 20px;
+    padding: 8px 16px;
+    background-color: white;
+    color: #0c4985;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.btn-back:hover {
+    background-color: #f0f4f7;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transform: translateY(-1px);
+}
+
+/* Фикс для расположения элементов в хэдере */
+.header-right {
+    display: flex;
+    align-items: center;
+}

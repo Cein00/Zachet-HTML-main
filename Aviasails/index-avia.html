@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Flights - Search List</title>
+    <link rel="stylesheet" href="style-avia.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <div class="header-left">
+                <h1 class="logo">Flights - Search List</h1>
+            </div>
+            <nav class="header-right">
+                <span class="breadcrumb">Home / Flights Search List</span>
+                <a href="../index.html" class="btn-back">Вернуться к визитке</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="search-section">
+        <div class="container">
+            <div class="trip-options">
+                <label><input type="radio" name="trip" checked> One Way</label>
+                <label><input type="radio" name="trip"> Round Trip</label>
+            </div>
+            <div class="search-inputs">
+                <input type="text" placeholder="From">
+                <input type="text" placeholder="To">
+                <input type="date">
+                <input type="date">
+                <select>
+                    <option>Economy Class</option>
+                </select>
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container main-grid">
+        
+        <aside class="sidebar">
+            <div class="filter-card">
+                <h3>Filter</h3>
+                
+                <div class="filter-group">
+                    <label>No. of Stops</label>
+                    <div class="check-item"><input type="checkbox"> Non Stop</div>
+                    <div class="check-item"><input type="checkbox"> 1 Stop</div>
+                    <div class="check-item"><input type="checkbox"> 2+ Stops</div>
+                </div>
+
+                <div class="filter-group">
+                    <label>Price</label>
+                    <div class="price-row">
+                        <span>Min:</span>
+                        <input type="number" class="price-input" value="0">
+                        <span>$</span>
+                        <span class="dash">-</span>
+                        <span>Max:</span>
+                        <input type="number" class="price-input" value="1000">
+                        <span>$</span>
+                    </div>
+                </div>
+
+                <div class="filter-group">
+                    <label>Airlines</label>
+                    <div class="check-item"><input type="checkbox"> Asiana Airlines</div>
+                    <div class="check-item"><input type="checkbox"> American Airlines</div>
+                    <div class="check-item"><input type="checkbox"> Air Canada</div>
+                    <div class="check-item"><input type="checkbox"> Air India</div>
+                    <div class="check-item"><input type="checkbox"> Jet Airways</div>
+                    <div class="check-item"><input type="checkbox"> Spicejet</div>
+                    <div class="check-item"><input type="checkbox"> IndiGo</div>
+                    <div class="check-item"><input type="checkbox"> Multiple Airlines</div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="route-header">
+                <h2>Dehli to Sydney</h2>
+            </div>
+            
+            <div class="flight-card">
+                <table class="flight-table">
+                    <thead>
+                        <tr>
+                            <th>Airlines</th>
+                            <th>Departure</th>
+                            <th>Duration</th>
+                            <th>Arrival</th>
+                            <th>Price</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>IndiGo<br><small class="text-muted">6E-2489</small></td>
+                            <td>23:30<br><small class="text-muted">Dehli</small></td>
+                            <td>18h 55m<br><small class="text-muted">Non Stop</small></td>
+                            <td>18:15<br><small class="text-muted">Sydney</small></td>
+                            <td class="price-cell">$980</td>
+                            <td>
+                                <button class="book-btn">Book</button>
+                                <a href="#" class="details-link">Flight Details</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Asiana Airlines<br><small class="text-muted">OZ-601</small></td>
+                            <td>12:15<br><small class="text-muted">Dehli</small></td>
+                            <td>14h 20m<br><small class="text-muted">1 Stop</small></td>
+                            <td>02:35<br><small class="text-muted">Sydney</small></td>
+                            <td class="price-cell">$1,250</td>
+                            <td>
+                                <button class="book-btn">Book</button>
+                                <a href="#" class="details-link">Flight Details</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Air Canada<br><small class="text-muted">AC-45</small></td>
+                            <td>08:45<br><small class="text-muted">Dehli</small></td>
+                            <td>22h 10m<br><small class="text-muted">2+ Stops</small></td>
+                            <td>06:55<br><small class="text-muted">Sydney</small></td>
+                            <td class="price-cell">$1,050</td>
+                            <td>
+                                <button class="book-btn">Book</button>
+                                <a href="#" class="details-link">Flight Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                American Airlines<br>
+                                <small class="text-muted">AA-1204</small>
+                            </td>
+                            <td>
+                                05:20<br>
+                                <small class="text-muted">Dehli</small>
+                            </td>
+                            <td>
+                                21h 30m<br>
+                                <small class="text-muted">1 Stop</small>
+                            </td>
+                            <td>
+                                02:50<br>
+                                <small class="text-muted">Sydney</small>
+                            </td>
+                            <td class="price-cell">$1,120</td>
+                            <td>
+                                <button class="book-btn">Book</button>
+                                <a href="#" class="details-link">Flight Details</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Air India<br>
+                                <small class="text-muted">AI-302</small>
+                            </td>
+                            <td>
+                                14:00<br>
+                                <small class="text-muted">Dehli</small>
+                            </td>
+                            <td>
+                                12h 45m<br>
+                                <small class="text-muted">Non Stop</small>
+                            </td>
+                            <td>
+                                02:45<br>
+                                <small class="text-muted">Sydney</small>
+                            </td>
+                            <td class="price-cell">$890</td>
+                            <td>
+                                <button class="book-btn">Book</button>
+                                <a href="#" class="details-link">Flight Details</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Qatar Airways<br>
+                                <small class="text-muted">QR-578</small>
+                            </td>
+                            <td>
+                                10:10<br>
+                                <small class="text-muted">Dehli</small>
+                            </td>
+                            <td>
+                                16h 10m<br>
+                                <small class="text-muted">1 Stop</small>
+                            </td>
+                            <td>
+                                02:20<br>
+                                <small class="text-muted">Sydney</small>
+                            </td>
+                            <td class="price-cell">$1,450</td>
+                            <td>
+                                <button class="book-btn">Book</button>
+                                <a href="#" class="details-link">Flight Details</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Emirates<br>
+                                <small class="text-muted">EK-512</small>
+                            </td>
+                            <td>
+                                19:45<br>
+                                <small class="text-muted">Dehli</small>
+                            </td>
+                            <td>
+                                17h 50m<br>
+                                <small class="text-muted">1 Stop</small>
+                            </td>
+                            <td>
+                                13:35<br>
+                                <small class="text-muted">Sydney</small>
+                            </td>
+                            <td class="price-cell">$1,320</td>
+                            <td>
+                                <button class="book-btn">Book</button>
+                                <a href="#" class="details-link">Flight Details</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
