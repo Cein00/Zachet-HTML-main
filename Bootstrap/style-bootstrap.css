@@ -1,0 +1,36 @@
+/* Общие стили для всех блоков */
+.custom-block {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+
+}
+
+/* Цвета из задания */
+.header-bg { background-color: #9d3b5e; }
+.menu-bg   { background-color: #6a1b3a; }
+.aside-bg  { background-color: #b8607e; }
+.main-bg   { background-color: #9d3b5e; }
+.section-bg { background-color: #d694ab; color: white; }
+.footer-bg { background-color: #6a1b3a; }
+
+/* Вертикальный текст для Aside 3 */
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 5px;
+}
+
+/* Настройка высоты для flex-колонок */
+.h-100 { min-height: 100%; }
+.btn-back {
+    display: inline-block;
+    padding: 12px 35px;
+    background-color: #c4aec9; /* Тот самый цвет из прошлых заданий */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
