@@ -3,43 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Визитка Марии</title>
+    <title>Визитка Марии | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
 
-    <header>
-        Визитная карточка студента
-    </header>
-
-    <div class="main-content">
-        <div class="profile-photo">
-            <img src="my-photo.jpg" alt="Фото студента">
+    <div class="glass-card">
+        <div class="sidebar">
+            <div class="profile-photo">
+                <img src="my-photo.jpg" alt="Мария">
+            </div>
+            <div class="contacts">
+                <a href="https://t.me/cein00" class="contact-item">
+                    <i class="fab fa-telegram"></i> @cein00
+                </a>
+                <a href="mailto:cein004xxx@gmail.com" class="contact-item">
+                    <i class="fas fa-envelope"></i> Gmail
+                </a>
+            </div>
         </div>
 
-        <div class="info-card">
-            <strong>Студент группы РПО23/3</strong><br>
-            Добош Мария Андреевна<br>
-            17 лет<br><br>
-            Учусь разрабатывать сайты, учусь на 3-м курсе, владею русским языком на уровне носителя, умею говорить на польском, английском лучше, чем 5-летний глухо немой ребенок
+        <div class="content">
+            <span class="badge">Студентка группы РПО23/3</span>
+            <h1>Добош Мария Андреевна</h1>
+            <p class="status">17 лет • Будущий вайбкодер (возможно)</p>
+            
+            <p class="bio">
+                Занимаюсь разработкой и дизайном интерфейсов: люблю, когда код работает, а интерфейс <strong>не бесит</strong>. 
+                Собираю проекты на практике, пробую разные технологии и постепенно прокачиваю свой стиль — и в коде, и во внешнем виде продуктов.
+            </p>
+
+            <div class="divider"></div>
+
+            <div class="section-title">Изучала(ю)</div>
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">C++</span>
+                <span class="tag">C#</span>
+                <span class="tag">SQL</span>
+                <span class="tag">HTML5 & CSS3</span>
+            </div>
+
+            <div class="projects-section">
+    <div class="section-title">Мои учебные проекты</div>
+    <div class="project-grid">
+        <a href="Vehicle/index-vehicle.html" class="proj-card">
+            <span class="proj-num">01</span>
+            <span class="proj-name">Vehicle</span>
+        </a>
+        <a href="Lorem/index-lorem.html" class="proj-card">
+            <span class="proj-num">02</span>
+            <span class="proj-name">Lorem Ipsum</span>
+        </a>
+        <a href="Math/index-math.html" class="proj-card">
+            <span class="proj-num">03</span>
+            <span class="proj-name">Формулы</span>
+        </a>
+        <a href="Seasons/index-seasons.html" class="proj-card">
+            <span class="proj-num">04</span>
+            <span class="proj-name">Seasons</span>
+        </a>
+        <a href="Contents/index-contents.html" class="proj-card">
+            <span class="proj-num">05</span>
+            <span class="proj-name">Contents</span>
+        </a>
+        <a href="TAE/index-tae.html" class="proj-card">
+            <span class="proj-num">06</span>
+            <span class="proj-name">TAE</span>
+        </a>
+        <a href="Fridge/index-fridge.html" class="proj-card">
+            <span class="proj-num">07</span>
+            <span class="proj-name">Fridge</span>
+        </a>
+        <a href="Menu-Footer/index-menu-footer.html" class="proj-card">
+            <span class="proj-num">08</span>
+            <span class="proj-name">Menu & Footer</span>
+        </a>
+        <a href="Bootstrap/index-bootstrap.html" class="proj-card">
+            <span class="proj-num">09</span>
+            <span class="proj-name">Bootstrap</span>
+        </a>
+        <a href="Grid/index-grid.html" class="proj-card">
+            <span class="proj-num">10</span>
+            <span class="proj-name">Layout (No Bootstrap)</span>
+        </a>
+        <a href="Aviasails/index-avia.html" class="proj-card">
+            <span class="proj-num">11</span>
+            <span class="proj-name">Aviasails</span>
+        </a>
+        <a href="Registration/index-reg.html" class="proj-card">
+            <span class="proj-num">12</span>
+            <span class="proj-name">Registration</span>
+        </a>
+        <a href="Contact/index-contact.html" class="proj-card">
+            <span class="proj-num">13</span>
+            <span class="proj-name">Contact Form</span>
+        </a>
+        
+        <a href="KLD_Gallery/index.html" class="proj-card highlight">
+            <span class="proj-num">★</span>
+            <span class="proj-name">Картинная галерея</span>
+        </a>
+
+        <a href="https://github.com/Cein00/Zachet-HTML-main" class="github-wide">
+            <i class="fab fa-github"></i> Перейти на GitHub
+        </a>
+    </div>
+</div>
         </div>
     </div>
-
-    <div class="navigation-area">
-    <p>Мои работы:</p>
-        <a href="Vehicle/index-vehicle.html" class="btn-placeholder">Задание 1: Vehicle</a>
-        <a href="Lorem/index-lorem.html" class="btn-placeholder">Задание 2: Lorem Ipsum</a>
-        <a href="Math/index-math.html" class="btn-placeholder">Задание 3: Формулы</a>
-        <a href="Seasons/index-seasons.html" class="btn-placeholder">Задание 4: Seasons</a>
-        <a href="Contents/index-contents.html" class="btn-placeholder">Задание 5: Contents</a>
-        <a href="TAE/index-tae.html" class="btn-placeholder">Задание 6: TAE</a>
-        <a href="Fridge/index-fridge.html" class="btn-placeholder">Задание 7: Fridge</a>
-        <a href="Menu-Footer/index-menu-footer.html" class="btn-placeholder">Задание 8: Menu & Footer</a>
-        <a href="Bootstrap/index-bootstrap.html" class="btn-placeholder">Задание 9: Bootstrap</a>
-        <a href="Aviasails/index-avia.html" class="btn-placeholder">Задание 10: Aviasails</a>
-        <a href="KLD_Gallery/index.html" class="btn-placeholder">Перейти в картинную галлерею</a>
-    </div>
-
-
 </body>
 </html>

@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.base {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Пропорции: Хедер (80), Меню и Футер (40) */
+header { height: 80px; background-color: #832a56; }
+nav    { height: 40px; background-color: #6a1b42; }
+footer { height: 40px; background-color: #6a1b42; }
+
+header, nav, footer {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/* Контейнер для среднего ряда */
+.main-layout {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 0.6fr;
+    gap: 10px;
+    /* Убираем растягивание всех колонок по высоте */
+    align-items: start; 
+}
+
+/* Боковые колонки теперь НЕ доходят до футера */
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 250px; /* Было 300px, стало 250px */
+    align-self: start; 
+}
+
+.aside3 {
+    background-color: #ad5c7d;
+    height: 250px; /* Совпадает с левой стороной */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: start;
+}
+
+.aside1 { flex: 1; background-color: #ad5c7d; display: flex; align-items: center; padding-left: 20px; }
+.aside2 { flex: 2; background-color: #ad5c7d; display: flex; align-items: center; padding-left: 20px; }
+
+/* Центральный блок, который доходит до футера */
+main {
+    background-color: #ad5c7d;
+    display: flex;
+    flex-direction: column;
+    /* Устанавливаем отступ между MAIN CONTENT, SECTION 1 и SECTION 2 */
+    gap: 10px; 
+    
+    /* Твои настроенные отступы: сверху 40, по бокам 60, снизу 30 */
+    padding: 40px 60px 30px 60px; 
+}
+
+.main-title {
+    text-align: left;
+    /* Убираем лишние внешние отступы, так как padding у main всё решит */
+    margin: 0 0 10px 0; 
+}
+
+section {
+    background-color: #d18ba4;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin: 0; /* Убираем лишнее, если было */
+}

@@ -1,0 +1,53 @@
+ body { background-color: #c4aec9 } /* Оранжевый фон */
+
+/* Жесткая тень для блоков */
+.hard-shadow { 
+    box-shadow: 0 4px 2px rgba(0,0,0,0.2) !important; 
+}
+
+.bg-light-gray { background-color: #dbdbdb; }
+
+/* Кнопка логина с темным низом */
+.btn-green {
+    background-color: #c295cc;
+    color: white;
+    border: none;
+    border-bottom: 4px solid rgb(147, 105, 156); /* То самое темное подчеркивание */
+}
+.btn-green:active { border-bottom: 4px solid rgb(147, 105, 156); }
+
+/* Социальные кнопки с тенями */
+.btn-fb { background-color: #3b5998; color: white; }
+.btn-tw { background-color: #1da1f2; color: white; }
+
+.rounded-0 { border-radius: 0 !important; }
+.forgot-link { color: #7f6685; font-weight: bold; text-decoration: none; }
+/* Стили для кнопки Login, похожие на соцкнопки */
+.btn-green:hover,
+.btn-green:focus,
+.btn-green:active {
+    background-color: #ae86b8 !important;
+    color: white !important;
+    border-bottom: 4px solid rgb(134, 95, 143) !important;
+}
+
+.btn-green:focus,
+.btn-green:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Отключаем изменение фона при hover/focus/active для соц-кнопок (с сохранением их собственных цветов) */
+.btn-fb:hover,
+.btn-fb:focus,
+.btn-fb:active {
+    background-color: #2f4c8b !important;
+    color: white !important;
+}
+
+.btn-tw:hover,
+.btn-tw:focus,
+.btn-tw:active {
+    background-color: #1790db !important;
+    color: white !important;
+}
